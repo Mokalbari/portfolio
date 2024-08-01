@@ -3,6 +3,9 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      boxShadow: {
+        full: "4px 6px black",
+      },
       colors: {
         peach: "#FEF2E8",
         yellow: "#FFE959",

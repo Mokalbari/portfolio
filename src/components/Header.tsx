@@ -27,26 +27,49 @@ const Header = () => {
         ligula. Maecenas nunc felis, ultricies et nisi non, vestibulum.
       </p>
       <nav>
-        <menu className="mt-4 flex flex-wrap justify-between text-slate-500">
-          <li className="flex items-center gap-3">
-            <SvgGithub />
-            {""}Github
-          </li>
-          <li className="flex items-center gap-3">
-            <SvgLinkedIn />
-            {""}LinkedIn
-          </li>
-          <li className="flex items-center gap-3">
-            <SvgResume />
-            {""}CV
-          </li>
-        </menu>
-        <div className="mt-4 text-center">
-          <Button
-            className="justify-self-center"
-            text="Me contacter"
-            type="button"
-          />
+        <div className="flex flex-col sm:flex-row">
+          <menu className="mt-4 flex justify-between text-slate-500 sm:items-center sm:justify-start sm:gap-6">
+            <li>
+              <a
+                className="flex items-center gap-3"
+                href="https://github.com/Mokalbari"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <SvgGithub />
+                {""}Github
+              </a>
+            </li>
+            <li>
+              <a
+                className="flex items-center gap-3"
+                href="https://www.linkedin.com/in/romain-hoarau-alastor/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <SvgLinkedIn />
+                {""}LinkedIn
+              </a>
+            </li>
+            <li>
+              <a
+                className="flex items-center gap-3"
+                href="https://drive.google.com/drive/folders/1ZD7dnLPY5C-m2EqHJ5T0y_3v6FdYzkId?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <SvgResume />
+                {""}CV
+              </a>
+            </li>
+          </menu>
+          <div className="mt-4 text-center sm:ml-8">
+            <Button
+              className="justify-self-center"
+              text="Me contacter"
+              type="button"
+            />
+          </div>
         </div>
       </nav>
     </header>

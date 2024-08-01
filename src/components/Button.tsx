@@ -7,7 +7,7 @@ type Props = {
 const Button = ({ text, type, className }: Props) => {
   return (
     <button
-      className={`rounded-xl border border-black bg-yellow px-3 py-2 text-black shadow-half-full ${className || ""}`}
+      className={`min-w-fit rounded-xl border border-black bg-yellow px-4 py-1 font-medium text-black shadow-half-full ${className || ""}`}
       type={type}
     >
       {text}

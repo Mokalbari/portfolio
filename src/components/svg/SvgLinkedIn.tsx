@@ -9,7 +9,7 @@ const SvgLinkedIn = ({ size = "25" }: SvgProps) => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <title>Go to LinkedIn</title>
+      <title>Lien vers LinkedIn</title>
       <g clip-path="url(#clip0_30_27)">
         <path
           fill-rule="evenodd"

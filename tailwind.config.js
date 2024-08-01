@@ -5,6 +5,7 @@ export default {
     extend: {
       boxShadow: {
         full: "4px 6px black",
+        "half-full": "2px 4px black",
       },
       colors: {
         peach: "#FEF2E8",
@@ -16,6 +17,9 @@ export default {
       fontFamily: {
         "public-sans": ['"Public Sans"', "sans-serif"],
         syne: ['"Syne"', "sans-serif"],
+      },
+      borderWidth: {
+        DEFAULT: "1px",
       },
     },
   },

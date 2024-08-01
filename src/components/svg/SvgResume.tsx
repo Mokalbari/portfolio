@@ -15,3 +15,5 @@ const SvgResume = ({ size = "25" }: SvgProps) => {
     </svg>
   )
 }
+
+export default SvgResume

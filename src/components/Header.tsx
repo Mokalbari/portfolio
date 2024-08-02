@@ -27,8 +27,8 @@ const Header = () => {
         ligula. Maecenas nunc felis, ultricies et nisi non, vestibulum.
       </p>
       <nav>
-        <div className="flex flex-col sm:flex-row">
-          <menu className="mt-4 flex justify-between text-slate-500 sm:items-center sm:justify-start sm:gap-6">
+        <div className="flex flex-col sm:flex-row sm:items-end">
+          <menu className="mt-4 flex justify-around text-slate-500 sm:items-center sm:justify-start sm:gap-6">
             <li>
               <a
                 className="flex items-center gap-3"

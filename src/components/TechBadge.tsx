@@ -4,7 +4,7 @@ type Props = {
 
 const TechBadge = ({ content }: Props) => {
   return (
-    <li className="w-fit rounded-lg border border-black bg-white px-2 text-sm">
+    <li className="w-fit rounded-lg border border-black bg-white px-2 text-xs">
       {content}
     </li>
   )

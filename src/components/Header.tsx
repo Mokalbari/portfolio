@@ -9,13 +9,13 @@ const Header = () => {
     <header className="pt-8">
       <div className="flex gap-4">
         <img
-          className="max-w-16 rounded-full border border-black"
+          className="max-w-14 self-center rounded-full border border-black sm:max-w-16"
           src={mokalbari}
           alt="Romain, au Népal octobre 2023"
         />
         <div>
           <h1 className="font-syne text-xl font-bold">Romain Hoarau Alastor</h1>
-          <h2>Développeur web · Tea geek</h2>
+          <h2>Développeur web</h2>
         </div>
       </div>
       <p className="mt-8">
@@ -63,7 +63,7 @@ const Header = () => {
               </a>
             </li>
           </menu>
-          <div className="mt-4 text-center sm:ml-8">
+          <div className="mt-8 text-center sm:ml-8">
             <Button
               className="justify-self-center"
               text="Me contacter"

@@ -9,7 +9,7 @@ const Header = () => {
     <header className="pt-8">
       <div className="flex gap-4">
         <img
-          className="max-w-14 rounded-full border border-black"
+          className="max-w-16 rounded-full border border-black"
           src={mokalbari}
           alt="Romain, au Népal octobre 2023"
         />

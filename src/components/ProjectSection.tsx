@@ -30,7 +30,14 @@ const ProjectSection = () => {
             cafés réalisée avec React, Tailwind et TypeScript. Les animations
             sont faites avec Framer Motion et le site présente un design
             responsif complexe et un formulaire avancé. <br />
-            Initive personnelle, Frontend Mentor
+            <a
+              className="underline"
+              href="https://github.com/Mokalbari/coffee-roaster"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Voir le repo
+            </a>
           </p>
           <p className="mt-4 text-center font-medium sm:text-left">
             React | TypeScript | Tailwind
@@ -57,7 +64,14 @@ const ProjectSection = () => {
             formatage des données pour faciliter l’utilisation des informations
             sous React.
             <br />
-            Initive personnelle, Frontend Mentor
+            <a
+              className="underline"
+              href="https://github.com/Mokalbari/planets-facts-2"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Voir le repo
+            </a>
           </p>
           <p className="mt-4 text-center font-medium sm:text-left">
             React | TypeScript
@@ -82,8 +96,16 @@ const ProjectSection = () => {
             Création d’une application full stack d’exploration des villes de
             France ; mise en place d’une API locale et d’un serveur Express,
             maquettage et design sous Figma, implémentation frontend avec React.
-            Travail selon les méthodes agiles. Ce projet a été porté par six
-            personnes.
+            Travail selon les méthodes agiles. <em>Projet collaboratif</em>.
+            <br />
+            <a
+              className="underline"
+              href="https://github.com/WildCodeSchool/05-2024-RemFr-Q2-TeamRocket-P2-G3"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Voir le repo
+            </a>
           </p>
           <p className="mt-4 text-center font-medium sm:text-left">
             React | JavaScript | ExpressJS

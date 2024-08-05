@@ -3,8 +3,8 @@ type Props = {
   text: string
   type: "submit" | "button" | "reset"
   className?: string
-  onClick: () => void
-  onTouchEnd: () => void
+  onClick?: () => void
+  onTouchEnd?: () => void
 }
 
 const Button = ({ text, type, className, onClick, onTouchEnd }: Props) => {

@@ -24,7 +24,7 @@ const SvgDoublePlay = ({
       <motion.path
         initial={{ x: -100, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
-        transition={{ delay: 0.35 }}
+        transition={{ delay: 0.45 }}
         d="M2 4.82843L57.1716 60L1.99999 115.172L2 4.82843Z"
         fill="#FFC700"
         stroke="black"

@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react"
 import { motion, AnimatePresence } from "framer-motion"
+import { useMediaQuery } from "use-media-query-react"
 
 import mokalbari from "../assets/romain_nepal.jpg"
 import SvgGithub from "./svg/SvgGithub"
@@ -9,6 +10,10 @@ import Button from "./Button"
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false)
+  const isMobile = useMediaQuery("(max-width: 768px)")
+  const email = "rahoarau@gmail.com"
+  const subject = "Prendre contact"
+  const body = "Bonjour, \n\nJe souhaite vous contacter pour..."
 
   useEffect(() => {
     if (isOpen) {
@@ -19,7 +24,6 @@ const Header = () => {
   }, [isOpen])
 
   const handleCopyToClipboard = () => {
-    const email = "rahoarau@gmail.com"
     navigator.clipboard.writeText(email)
   }
 
@@ -31,39 +35,30 @@ const Header = () => {
   return (
     <header className="pt-8">
       <div className="flex gap-4">
-        <motion.img
-          initial={{ opacity: 0, x: -50 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.25, ease: "easeIn" }}
+        <img
           className="max-w-14 self-center rounded-full border border-black sm:max-w-16"
           src={mokalbari}
           alt="Romain, au Népal octobre 2023"
         />
         <div>
-          <motion.h1
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.1, duration: 0.25, ease: "easeIn" }}
-            className="font-syne text-xl font-bold"
-          >
-            Romain Hoarau Alastor
-          </motion.h1>
-          <motion.h2
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.3, duration: 0.25, ease: "easeIn" }}
-          >
-            Développeur web
-          </motion.h2>
+          <h1 className="font-syne text-xl font-bold">Romain Hoarau Alastor</h1>
+          <h2>Développeur web</h2>
         </div>
       </div>
       <p className="mt-8">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at
-        lectus ligula. Quisque scelerisque.
+        👋 Bonjour ! Bienvenue sur mon coin d'internet ! <br /> Je suis Romain,
+        développeur web spécialisé en React, TypeScript et Node.js.
       </p>
       <p className="mt-4">
-        Quisque varius mattis dui. Pellentesque ac dapibus lectus, ac mollis
-        ligula. Maecenas nunc felis, ultricies et nisi non, vestibulum.
+        En 2023, je m'amusais à créer des processus d'automatisation et des
+        algorithmes pour résoudre divers problèmes dans ma carrière précédente.
+        Aujourd'hui, j'ai la chance de pouvoir mettre en œuvre ces compétences
+        au quotidien par le biais du développement web.
+      </p>
+      <p className="mt-4">
+        Toujours en quête de nouveaux défis pour améliorer mes compétences et
+        participer à des projets innovants, je suis ouvert aux collaborations.
+        Discutons si nos visions se rejoignent !
       </p>
       <nav>
         <div className="flex flex-col sm:flex-row sm:items-end">
@@ -103,13 +98,25 @@ const Header = () => {
             </li>
           </menu>
           <div className="relative mt-8 text-center sm:ml-8">
-            <Button
-              className="justify-self-center"
-              text="Me contacter"
-              type="button"
-              onClick={handleClick}
-              onTouchEnd={handleClick}
-            />
+            {isMobile ? (
+              <a
+                href={`mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`}
+              >
+                <Button
+                  className="justify-self-center"
+                  text="Me contacter"
+                  type="button"
+                />
+              </a>
+            ) : (
+              <Button
+                className="justify-self-center"
+                text="Me contacter"
+                type="button"
+                onClick={handleClick}
+                onTouchEnd={handleClick}
+              />
+            )}
             <AnimatePresence>
               {isOpen && (
                 <motion.p

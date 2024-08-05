@@ -1,3 +1,5 @@
+import { motion } from "framer-motion"
+
 type Props = {
   size?: string
   className?: string
@@ -5,7 +7,11 @@ type Props = {
 
 const SvgStar = ({ size = "93", className }: Props) => {
   return (
-    <svg
+    <motion.svg
+      initial={{ scale: 0 }}
+      whileInView={{ scale: [0.7, 1.5, 1.0, 1.0] }}
+      transition={{ delay: 0.2, duration: 0.5 }}
+      viewport={{ once: true, amount: "all" }}
       className={className}
       width={size}
       height={size}
@@ -20,7 +26,7 @@ const SvgStar = ({ size = "93", className }: Props) => {
         stroke="black"
         strokeWidth="1.84962"
       />
-    </svg>
+    </motion.svg>
   )
 }
 

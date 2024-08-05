@@ -31,7 +31,7 @@ const Header = () => {
           <menu className="mt-4 flex justify-around text-slate-500 sm:items-center sm:justify-start sm:gap-6">
             <li>
               <a
-                className="flex items-center gap-3"
+                className="flex items-center gap-1"
                 href="https://github.com/Mokalbari"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -42,7 +42,7 @@ const Header = () => {
             </li>
             <li>
               <a
-                className="flex items-center gap-3"
+                className="flex items-center gap-1"
                 href="https://www.linkedin.com/in/romain-hoarau-alastor/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -53,7 +53,7 @@ const Header = () => {
             </li>
             <li>
               <a
-                className="flex items-center gap-3"
+                className="flex items-center gap-1"
                 href="https://drive.google.com/drive/folders/1ZD7dnLPY5C-m2EqHJ5T0y_3v6FdYzkId?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"

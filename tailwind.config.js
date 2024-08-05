@@ -8,6 +8,7 @@ export default {
         "half-full": "2px 4px black",
       },
       colors: {
+        dark: "#374151",
         peach: "#FEF2E8",
         yellow: "#FFE959",
         blue: "#CAF2FB",

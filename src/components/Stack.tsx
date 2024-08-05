@@ -8,9 +8,12 @@ const Stack = () => {
     "JavaScript",
     "Framer Motion",
     "GSAP",
+    "React Native",
+    "HTML",
+    "CSS",
   ]
 
-  const backendSkills = ["NodeJS", "SQL", "ExpressJS"]
+  const backendSkills = ["NodeJS", "MySQL", "ExpressJS", "PostgreSQL"]
 
   const otherSkills = ["Jest - Vitest", "Figma", "Git - GitHub"]
 
@@ -36,7 +39,7 @@ const Stack = () => {
           />
           <StackCard
             className="mt-4 bg-blue sm:mt-0"
-            title="Autres"
+            title="Web - Général"
             skills={otherSkills}
           />
         </div>

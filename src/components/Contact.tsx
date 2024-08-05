@@ -28,8 +28,8 @@ const Contact = () => {
     <div className="relative flex flex-col items-center sm:items-start">
       <h2 className="mt-16 font-syne text-xl font-bold">Me contacter</h2>
       <p className="mt-4">
-        Oh woaw ! Vous avez lu jusqu’ici ? Merci ! Si vous souhaitez prendre
-        contact :
+        Merci de m'avoir lu jusqu'ici ! Si vous souhaitez prendre contact, je
+        vous invite à me contacter via ce bouton ! A bientôt.
       </p>
       <Button
         className="mb-20 mt-6 sm:self-end"

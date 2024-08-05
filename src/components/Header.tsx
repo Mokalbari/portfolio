@@ -31,14 +31,30 @@ const Header = () => {
   return (
     <header className="pt-8">
       <div className="flex gap-4">
-        <img
+        <motion.img
+          initial={{ opacity: 0, x: -50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.25, ease: "easeIn" }}
           className="max-w-14 self-center rounded-full border border-black sm:max-w-16"
           src={mokalbari}
           alt="Romain, au Népal octobre 2023"
         />
         <div>
-          <h1 className="font-syne text-xl font-bold">Romain Hoarau Alastor</h1>
-          <h2>Développeur web</h2>
+          <motion.h1
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.1, duration: 0.25, ease: "easeIn" }}
+            className="font-syne text-xl font-bold"
+          >
+            Romain Hoarau Alastor
+          </motion.h1>
+          <motion.h2
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.3, duration: 0.25, ease: "easeIn" }}
+          >
+            Développeur web
+          </motion.h2>
         </div>
       </div>
       <p className="mt-8">
@@ -92,6 +108,7 @@ const Header = () => {
               text="Me contacter"
               type="button"
               onClick={handleClick}
+              onTouchEnd={handleClick}
             />
             <AnimatePresence>
               {isOpen && (

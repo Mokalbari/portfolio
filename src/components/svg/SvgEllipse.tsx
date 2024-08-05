@@ -5,7 +5,7 @@ const SvgEllipse = ({ size = "75", className }: Props) => {
   return (
     <motion.svg
       animate={{ rotate: 360 }}
-      transition={{ duration: 20, repeat: Number.POSITIVE_INFINITY }}
+      transition={{ duration: 100, repeat: Number.POSITIVE_INFINITY }}
       initial={{ y: -35, x: 30 }}
       className={className}
       width={size}

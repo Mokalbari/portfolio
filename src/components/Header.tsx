@@ -57,7 +57,8 @@ const Header = () => {
       </p>
       <p className="mt-4">
         Toujours en quête de nouveaux défis pour améliorer mes compétences et
-        participer à des projets innovants, je suis ouvert aux collaborations.
+        participer à des projets innovants, je suis ouvert aux collaborations.{" "}
+        <br />
         Discutons si nos visions se rejoignent !
       </p>
       <nav>

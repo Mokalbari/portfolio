@@ -1,5 +1,7 @@
 import ProjectCard from "./ProjectCard"
-import imgPlaceholder from "../assets/c3uhsgo1vx541.jpg"
+import coffeeRoaster from "../../public/coffeeroaster.png"
+import escapade from "../../public/escapade.png"
+import planets from "../../public/planets.png"
 
 // type Props = {}
 
@@ -10,19 +12,32 @@ const ProjectSection = () => {
         Une sélection de projets
       </h2>
       <article className="mt-11 sm:flex sm:items-start sm:gap-6">
-        <ProjectCard
-          imgSrc={imgPlaceholder}
-          description="Coffee Roaster"
-          className="sm:max-w-48"
-          bgColor="bg-green"
-        />
+        <a
+          href="https://coffee-roaster-theta.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <ProjectCard
+            imgSrc={coffeeRoaster}
+            description="Coffee Roaster"
+            className="sm:max-w-48"
+            bgColor="bg-green"
+          />
+        </a>
         <div className="flex-1">
           <p className="mt-6 text-xs sm:mt-0">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at
-            lectus ligula. Quisque scelerisque consectetur blandit. Proin sed
-            velit rhoncus, consequat purus ac, porta orci. Sed suscipit
-            efficitur cursus. Quisque varius mattis dui. Pellentesque ac dapibus
-            lectus, ac mollis ligula.
+            Implémentation d’une application multipage pour un torréfacteur de
+            cafés réalisée avec React, Tailwind et TypeScript. Les animations
+            sont faites avec Framer Motion et le site présente un design
+            responsif complexe et un formulaire avancé. <br />
+            <a
+              className="underline"
+              href="https://github.com/Mokalbari/coffee-roaster"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Voir le repo
+            </a>
           </p>
           <p className="mt-4 text-center font-medium sm:text-left">
             React | TypeScript | Tailwind
@@ -30,42 +45,70 @@ const ProjectSection = () => {
         </div>
       </article>
       <article className="mt-11 sm:flex sm:flex-row-reverse sm:items-start sm:gap-6">
-        <ProjectCard
-          imgSrc={imgPlaceholder}
-          description="Coffee Roaster"
-          className="sm:max-w-48"
-          bgColor="bg-pink"
-        />
+        <a
+          href="https://planets-facts-2.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <ProjectCard
+            imgSrc={planets}
+            description="Planets Facts"
+            className="sm:max-w-48"
+            bgColor="bg-pink"
+          />
+        </a>
         <div className="flex-1">
           <p className="mt-6 text-xs sm:mt-0">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at
-            lectus ligula. Quisque scelerisque consectetur blandit. Proin sed
-            velit rhoncus, consequat purus ac, porta orci. Sed suscipit
-            efficitur cursus. Quisque varius mattis dui. Pellentesque ac dapibus
-            lectus, ac mollis ligula.
+            Implémentation d’un design frontend depuis Figma avec React. Typage
+            des données avec TypeScript. Le principal défi de ce site a été le
+            formatage des données pour faciliter l’utilisation des informations
+            sous React.
+            <br />
+            <a
+              className="underline"
+              href="https://github.com/Mokalbari/planets-facts-2"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Voir le repo
+            </a>
           </p>
           <p className="mt-4 text-center font-medium sm:text-left">
-            React | TypeScript | Tailwind
+            React | TypeScript
           </p>
         </div>
       </article>
       <article className="mt-11 sm:flex sm:items-start sm:gap-6">
-        <ProjectCard
-          imgSrc={imgPlaceholder}
-          description="Coffee Roaster"
-          className="sm:max-w-48"
-          bgColor="bg-peach"
-        />
+        <a
+          href="https://escapade-p2.netlify.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <ProjectCard
+            imgSrc={escapade}
+            description="Escapade"
+            className="sm:max-w-48"
+            bgColor="bg-peach"
+          />
+        </a>
         <div className="flex-1">
           <p className="mt-6 text-xs sm:mt-0">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at
-            lectus ligula. Quisque scelerisque consectetur blandit. Proin sed
-            velit rhoncus, consequat purus ac, porta orci. Sed suscipit
-            efficitur cursus. Quisque varius mattis dui. Pellentesque ac dapibus
-            lectus, ac mollis ligula.
+            Création d’une application full stack d’exploration des villes de
+            France ; mise en place d’une API locale et d’un serveur Express,
+            maquettage et design sous Figma, implémentation frontend avec React.
+            Travail selon les méthodes agiles. <em>Projet collaboratif</em>.
+            <br />
+            <a
+              className="underline"
+              href="https://github.com/WildCodeSchool/05-2024-RemFr-Q2-TeamRocket-P2-G3"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Voir le repo
+            </a>
           </p>
           <p className="mt-4 text-center font-medium sm:text-left">
-            React | TypeScript | Tailwind
+            React | JavaScript | ExpressJS
           </p>
         </div>
       </article>

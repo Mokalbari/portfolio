@@ -1,3 +1,7 @@
+import { useState, useEffect } from "react"
+import { motion, AnimatePresence } from "framer-motion"
+import { useMediaQuery } from "use-media-query-react"
+
 import mokalbari from "../assets/romain_nepal.jpg"
 import SvgGithub from "./svg/SvgGithub"
 import SvgLinkedIn from "./svg/SvgLinkedIn"
@@ -5,6 +9,29 @@ import SvgResume from "./svg/SvgResume"
 import Button from "./Button"
 
 const Header = () => {
+  const [isOpen, setIsOpen] = useState(false)
+  const isMobile = useMediaQuery("(max-width: 768px)")
+  const email = "rahoarau@gmail.com"
+  const subject = "Prendre contact"
+  const body = "Bonjour, \n\nJe souhaite vous contacter pour..."
+
+  useEffect(() => {
+    if (isOpen) {
+      setTimeout(() => {
+        setIsOpen(false)
+      }, 3000)
+    }
+  }, [isOpen])
+
+  const handleCopyToClipboard = () => {
+    navigator.clipboard.writeText(email)
+  }
+
+  const handleClick = () => {
+    handleCopyToClipboard()
+    setIsOpen(true)
+  }
+
   return (
     <header className="pt-8">
       <div className="flex gap-4">
@@ -19,12 +46,19 @@ const Header = () => {
         </div>
       </div>
       <p className="mt-8">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at
-        lectus ligula. Quisque scelerisque.
+        👋 Bonjour ! Bienvenue sur mon coin d'internet ! <br /> Je suis Romain,
+        développeur web spécialisé en React, TypeScript et Node.js.
       </p>
       <p className="mt-4">
-        Quisque varius mattis dui. Pellentesque ac dapibus lectus, ac mollis
-        ligula. Maecenas nunc felis, ultricies et nisi non, vestibulum.
+        En 2023, je m'amusais à créer des processus d'automatisation et des
+        algorithmes pour résoudre divers problèmes dans ma carrière précédente.
+        Aujourd'hui, j'ai la chance de pouvoir mettre en œuvre ces compétences
+        au quotidien par le biais du développement web.
+      </p>
+      <p className="mt-4">
+        Toujours en quête de nouveaux défis pour améliorer mes compétences et
+        participer à des projets innovants, je suis ouvert aux collaborations.
+        Discutons si nos visions se rejoignent !
       </p>
       <nav>
         <div className="flex flex-col sm:flex-row sm:items-end">
@@ -63,12 +97,38 @@ const Header = () => {
               </a>
             </li>
           </menu>
-          <div className="mt-8 text-center sm:ml-8">
-            <Button
-              className="justify-self-center"
-              text="Me contacter"
-              type="button"
-            />
+          <div className="relative mt-8 text-center sm:ml-8">
+            {isMobile ? (
+              <a
+                href={`mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`}
+              >
+                <Button
+                  className="justify-self-center"
+                  text="Me contacter"
+                  type="button"
+                />
+              </a>
+            ) : (
+              <Button
+                className="justify-self-center"
+                text="Me contacter"
+                type="button"
+                onClick={handleClick}
+                onTouchEnd={handleClick}
+              />
+            )}
+            <AnimatePresence>
+              {isOpen && (
+                <motion.p
+                  initial={{ opacity: 0, scaleY: 0, y: 0 }}
+                  animate={{ opacity: 1, scaleY: 1, y: 10 }}
+                  exit={{ opacity: 0, scaleY: 0, y: 5 }}
+                  className="absolute origin-top rounded-xl border border-black bg-pink p-1 shadow-half-full"
+                >
+                  ✅ Adresse mail copiée dans le presse-papiers
+                </motion.p>
+              )}
+            </AnimatePresence>
           </div>
         </div>
       </nav>

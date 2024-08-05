@@ -46,7 +46,7 @@ const Header = () => {
         </div>
       </div>
       <p className="mt-8">
-        👋 Bonjour ! Bienvenue sur mon coin d'internet ! <br /> Je suis Romain,
+        👋 Bonjour ! Bienvenue dans mon coin d'internet ! <br /> Je suis Romain,
         développeur web spécialisé en React, TypeScript et Node.js.
       </p>
       <p className="mt-4">

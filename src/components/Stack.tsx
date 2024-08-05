@@ -27,18 +27,18 @@ const Stack = () => {
       </h3>
       <div className="sm:mt-8 sm:flex sm:gap-4">
         <StackCard
-          className="mt-8 bg-yellow text-left sm:mt-0 sm:w-2/5"
+          className="mt-8 flex-col bg-yellow text-left sm:mt-0 sm:w-2/5 sm:gap-4"
           title="Frontend"
           skills={frontendSkills}
         />
         <div className="sm:flex-1">
           <StackCard
-            className="mt-4 bg-yellow sm:mb-4 sm:mt-0"
+            className="mt-4 bg-yellow sm:mb-4 sm:mt-0 sm:gap-4"
             title="Backend"
             skills={backendSkills}
           />
           <StackCard
-            className="mt-4 bg-blue sm:mt-0"
+            className="mt-4 bg-blue sm:mt-0 sm:gap-4"
             title="Web - Général"
             skills={otherSkills}
           />

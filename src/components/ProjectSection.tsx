@@ -14,6 +14,7 @@ const ProjectSection = () => {
           imgSrc={imgPlaceholder}
           description="Coffee Roaster"
           className="sm:max-w-48"
+          bgColor="bg-green"
         />
         <div className="flex-1">
           <p className="mt-6 text-xs sm:mt-0">
@@ -33,6 +34,7 @@ const ProjectSection = () => {
           imgSrc={imgPlaceholder}
           description="Coffee Roaster"
           className="sm:max-w-48"
+          bgColor="bg-pink"
         />
         <div className="flex-1">
           <p className="mt-6 text-xs sm:mt-0">
@@ -52,6 +54,7 @@ const ProjectSection = () => {
           imgSrc={imgPlaceholder}
           description="Coffee Roaster"
           className="sm:max-w-48"
+          bgColor="bg-peach"
         />
         <div className="flex-1">
           <p className="mt-6 text-xs sm:mt-0">

@@ -1,6 +1,6 @@
-type Props = { size: string; className?: string }
+type Props = { size?: string; className?: string }
 
-const MyComponent = ({ size = "75", className }: Props) => {
+const SvgEllipse = ({ size = "75", className }: Props) => {
   return (
     <svg
       className={className}
@@ -31,4 +31,4 @@ const MyComponent = ({ size = "75", className }: Props) => {
   )
 }
 
-export default MyComponent
+export default SvgEllipse

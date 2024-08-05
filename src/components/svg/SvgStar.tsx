@@ -1,9 +1,9 @@
 type Props = {
-  size: string
+  size?: string
   className?: string
 }
 
-const MyComponent = ({ size = "93", className }: Props) => {
+const SvgStar = ({ size = "93", className }: Props) => {
   return (
     <svg
       className={className}
@@ -24,4 +24,4 @@ const MyComponent = ({ size = "93", className }: Props) => {
   )
 }
 
-export default MyComponent
+export default SvgStar

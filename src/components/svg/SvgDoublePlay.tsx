@@ -1,10 +1,10 @@
 type Props = {
-  sizeWidth: string
-  sizeHeight: string
+  sizeWidth?: string
+  sizeHeight?: string
   className?: string
 }
 
-const MyComponent = ({
+const SvgDoublePlay = ({
   sizeWidth = "90",
   sizeHeight = "120",
   className,
@@ -34,4 +34,4 @@ const MyComponent = ({
   )
 }
 
-export default MyComponent
+export default SvgDoublePlay

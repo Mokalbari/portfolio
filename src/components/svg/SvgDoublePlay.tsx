@@ -23,12 +23,12 @@ const SvgDoublePlay = ({
         d="M2 4.82843L57.1716 60L1.99999 115.172L2 4.82843Z"
         fill="#FFC700"
         stroke="black"
-        stroke-width="4"
+        strokeWidth="4"
       />
       <path
         d="M32 4.82843L87.1716 60L32 115.172L32 4.82843Z"
         stroke="black"
-        stroke-width="4"
+        strokeWidth="4"
       />
     </svg>
   )

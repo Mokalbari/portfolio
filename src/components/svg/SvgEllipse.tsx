@@ -16,8 +16,8 @@ const SvgEllipse = ({ size = "75", className }: Props) => {
         cy="37.8334"
         r="35.8633"
         stroke="black"
-        stroke-width="2.47333"
-        stroke-dasharray="4.95 4.95"
+        strokeWidth="2.47333"
+        strokeDasharray="4.95 4.95"
       />
       <circle
         cx="37.8334"
@@ -25,7 +25,7 @@ const SvgEllipse = ({ size = "75", className }: Props) => {
         r="17.3133"
         fill="#FFC700"
         stroke="black"
-        stroke-width="2.47333"
+        strokeWidth="2.47333"
       />
     </svg>
   )

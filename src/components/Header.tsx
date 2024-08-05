@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react"
 import mokalbari from "../assets/romain_nepal.jpg"
 import SvgGithub from "./svg/SvgGithub"
 import SvgLinkedIn from "./svg/SvgLinkedIn"
@@ -5,6 +6,26 @@ import SvgResume from "./svg/SvgResume"
 import Button from "./Button"
 
 const Header = () => {
+  const [isOpen, setIsOpen] = useState(false)
+
+  useEffect(() => {
+    if (isOpen) {
+      setTimeout(() => {
+        setIsOpen(false)
+      }, 3000)
+    }
+  }, [isOpen])
+
+  const handleCopyToClipboard = () => {
+    const email = "rahoarau@gmail.com"
+    navigator.clipboard.writeText(email)
+  }
+
+  const handleClick = () => {
+    handleCopyToClipboard()
+    setIsOpen(true)
+  }
+
   return (
     <header className="pt-8">
       <div className="flex gap-4">
@@ -63,12 +84,18 @@ const Header = () => {
               </a>
             </li>
           </menu>
-          <div className="mt-8 text-center sm:ml-8">
+          <div className="relative mt-8 text-center sm:ml-8">
             <Button
               className="justify-self-center"
               text="Me contacter"
               type="button"
+              onClick={handleClick}
             />
+            <p
+              className={`${!isOpen ? "hidden" : null} absolute translate-y-2 rounded-xl border border-black bg-pink p-1 shadow-half-full`}
+            >
+              ✅ Adresse mail copiée dans le presse-papiers
+            </p>
           </div>
         </div>
       </nav>

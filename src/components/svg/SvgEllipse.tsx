@@ -1,8 +1,12 @@
+import { motion } from "framer-motion"
 type Props = { size?: string; className?: string }
 
 const SvgEllipse = ({ size = "75", className }: Props) => {
   return (
-    <svg
+    <motion.svg
+      animate={{ rotate: 360 }}
+      transition={{ duration: 20, repeat: Number.POSITIVE_INFINITY }}
+      initial={{ y: -35, x: 30 }}
       className={className}
       width={size}
       height={size}
@@ -27,7 +31,7 @@ const SvgEllipse = ({ size = "75", className }: Props) => {
         stroke="black"
         strokeWidth="2.47333"
       />
-    </svg>
+    </motion.svg>
   )
 }
 

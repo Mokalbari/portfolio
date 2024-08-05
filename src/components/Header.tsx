@@ -1,4 +1,6 @@
 import { useState, useEffect } from "react"
+import { motion, AnimatePresence } from "framer-motion"
+
 import mokalbari from "../assets/romain_nepal.jpg"
 import SvgGithub from "./svg/SvgGithub"
 import SvgLinkedIn from "./svg/SvgLinkedIn"
@@ -91,11 +93,18 @@ const Header = () => {
               type="button"
               onClick={handleClick}
             />
-            <p
-              className={`${!isOpen ? "hidden" : null} absolute translate-y-2 rounded-xl border border-black bg-pink p-1 shadow-half-full`}
-            >
-              ✅ Adresse mail copiée dans le presse-papiers
-            </p>
+            <AnimatePresence>
+              {isOpen && (
+                <motion.p
+                  initial={{ opacity: 0, scaleY: 0, y: 0 }}
+                  animate={{ opacity: 1, scaleY: 1, y: 10 }}
+                  exit={{ opacity: 0, scaleY: 0, y: 5 }}
+                  className="absolute origin-top rounded-xl border border-black bg-pink p-1 shadow-half-full"
+                >
+                  ✅ Adresse mail copiée dans le presse-papiers
+                </motion.p>
+              )}
+            </AnimatePresence>
           </div>
         </div>
       </nav>

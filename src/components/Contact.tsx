@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react"
-
+import { AnimatePresence, motion } from "framer-motion"
 import Button from "./Button"
 import SvgArrow from "./svg/SvgArrow"
 
@@ -37,11 +37,18 @@ const Contact = () => {
         text="Me contacter"
         onClick={handleClick}
       />
-      <p
-        className={`${!isOpen ? "hidden" : null} absolute bottom-0 right-0 z-10 max-w-36 translate-y-4 rounded-xl border border-black bg-pink p-1 shadow-half-full`}
-      >
-        ✅ Adresse mail copiée dans le presse-papiers
-      </p>
+      <AnimatePresence>
+        {isOpen && (
+          <motion.p
+            initial={{ opacity: 0, scaleY: 0, x: 50, y: 200 }}
+            animate={{ opacity: 1, scaleY: 1, x: 50, y: 220 }}
+            exit={{ opacity: 0, scaleY: 0, x: 50, y: 200 }}
+            className="absolute z-10 origin-top rounded-xl border border-black bg-pink p-1 shadow-half-full max-sm:max-w-32"
+          >
+            ✅ Adresse mail copiée dans le presse-papiers
+          </motion.p>
+        )}
+      </AnimatePresence>
       <SvgArrow
         size="90"
         className="absolute bottom-0 max-sm:left-1/4 sm:right-1/4"

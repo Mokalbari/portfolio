@@ -51,7 +51,7 @@ const Header = () => {
       </p>
       <p className="mt-4">
         En 2023, je m'amusais à créer des processus d'automatisation et des
-        algorithmes pour résoudre divers problèmes dans ma carrière précédente.
+        algorithmes pour résoudre divers problèmes de ma précédente carrière.
         Aujourd'hui, j'ai la chance de pouvoir mettre en œuvre ces compétences
         au quotidien par le biais du développement web.
       </p>

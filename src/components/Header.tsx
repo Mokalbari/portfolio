@@ -47,7 +47,7 @@ const Header = () => {
       </div>
       <p className="mt-8">
         👋 Bonjour ! Bienvenue dans mon coin d'internet ! <br /> Je suis Romain,
-        développeur web spécialisé en React, TypeScript et Node.js.
+        développeur web spécialisé en React, TypeScript et NextJS.
       </p>
       <p className="mt-4">
         En 2023, je m'amusais à créer des processus d'automatisation et des

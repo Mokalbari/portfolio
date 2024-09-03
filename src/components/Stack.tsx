@@ -2,6 +2,7 @@ import StackCard from "./StackCard"
 
 const Stack = () => {
   const frontendSkills = [
+    "NextJs",
     "React",
     "TypeScript",
     "Tailwind",
@@ -9,11 +10,9 @@ const Stack = () => {
     "Framer Motion",
     "GSAP",
     "React Native",
-    "HTML",
-    "CSS",
   ]
 
-  const backendSkills = ["NodeJS", "MySQL", "ExpressJS", "PostgreSQL"]
+  const backendSkills = ["NextJS", "ExpressJS", "PostgreSQL", "MySQL"]
 
   const otherSkills = ["Jest - Vitest", "Figma", "Git - GitHub"]
 

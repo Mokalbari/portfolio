@@ -1,6 +1,5 @@
 import ProjectCard from "./ProjectCard"
 import coffeeRoaster from "../../public/coffeeroaster.png"
-import escapade from "../../public/escapade.png"
 import planets from "../../public/planets.png"
 import primeVideo from "../../public/primevideo.png"
 
@@ -80,7 +79,7 @@ const ProjectSection = () => {
           </p>
         </div>
       </article>
-      <article className="mt-11 sm:flex sm:items-start sm:gap-6">
+      {/* <article className="mt-11 sm:flex sm:items-start sm:gap-6">
         <a
           href="https://escapade-p2.netlify.app/"
           target="_blank"
@@ -113,8 +112,8 @@ const ProjectSection = () => {
             React | JavaScript | ExpressJS
           </p>
         </div>
-      </article>
-      <article className="mt-11 sm:flex sm:flex-row-reverse sm:items-start sm:gap-6">
+      </article> */}
+      <article className="mt-11 sm:flex sm:flex-row sm:items-start sm:gap-6">
         <a
           href="https://planets-facts-2.vercel.app/"
           target="_blank"

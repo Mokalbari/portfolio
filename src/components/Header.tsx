@@ -1,17 +1,17 @@
-import { useState, useEffect } from "react"
-import { motion, AnimatePresence } from "framer-motion"
+import { AnimatePresence, motion } from "framer-motion"
+import { useEffect, useState } from "react"
 import { useMediaQuery } from "use-media-query-react"
 
 import mokalbari from "../assets/romain_nepal.jpg"
+import Button from "./Button"
 import SvgGithub from "./svg/SvgGithub"
 import SvgLinkedIn from "./svg/SvgLinkedIn"
 import SvgResume from "./svg/SvgResume"
-import Button from "./Button"
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false)
   const isMobile = useMediaQuery("(max-width: 768px)")
-  const email = "rahoarau@gmail.com"
+  const email = "romain.alastor@gmail.com"
   const subject = "Prendre contact"
   const body = "Bonjour, \n\nJe souhaite vous contacter pour..."
 

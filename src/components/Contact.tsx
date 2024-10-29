@@ -1,5 +1,5 @@
-import { useState, useEffect } from "react"
 import { AnimatePresence, motion } from "framer-motion"
+import { useEffect, useState } from "react"
 import Button from "./Button"
 import SvgArrow from "./svg/SvgArrow"
 
@@ -15,7 +15,7 @@ const Contact = () => {
   }, [isOpen])
 
   const handleCopyToClipboard = () => {
-    const email = "rahoarau@gmail.com"
+    const email = "romain.alastor@gmail.com"
     navigator.clipboard.writeText(email)
   }
 

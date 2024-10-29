@@ -14,13 +14,13 @@ const ProjectSection = () => {
 
       <article className="mt-11 sm:flex sm:items-start sm:gap-6">
         <a
-          href="https://coffee-roaster-theta.vercel.app/"
+          href="https://finance-wizard-mu.vercel.app/"
           target="_blank"
           rel="noopener noreferrer"
         >
           <ProjectCard
             imgSrc={financewizard}
-            description="Coffee Roaster"
+            description="Finance Wizard"
             className="sm:max-w-48"
             bgColor="bg-green"
           />
